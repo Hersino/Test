@@ -4,9 +4,9 @@ import java.util.concurrent.*;
 
 public class StudentServer {
     public static void main(String[] args) throws IOException {
-        ServerSocket server = new ServerSocket(5000);
+        ServerSocket server = new ServerSocket(5500);
         ExecutorService pool = Executors.newCachedThreadPool();
-        System.out.println("Server startet på port 5000");
+        System.out.println("Server startet på port 5500");
 
         while (true) {
             Socket socket = server.accept();
