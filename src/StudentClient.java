@@ -20,7 +20,7 @@ public class StudentClient extends Application {
                 int age = Integer.parseInt(ageField.getText());
                 Student student = new Student(name, age);
 
-                Socket socket = new Socket("localhost", 5500);
+                Socket socket = new Socket("localhost", 5400);
                 ObjectOutputStream out = new ObjectOutputStream(socket.getOutputStream());
                 out.writeObject(student);
                 out.close();
